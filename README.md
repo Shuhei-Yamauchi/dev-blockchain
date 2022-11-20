@@ -1,1 +1,1 @@
-# Naivecoin - a cryptocurrency implem
+BlockChain-dev . 2022-11-20.
