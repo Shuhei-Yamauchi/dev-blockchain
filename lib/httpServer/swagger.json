@@ -140,6 +140,34 @@
                 }
             }
         },
+        "/blockchain/blocks/transactions": {
+            "put": {
+                "tags": [
+                    "blockchain"
+                ],
+                "summary": "Update the all block transactions",
+                "description": "",
+                "parameters": [
+                    {
+                        "in": "body",
+                        "name": "body",
+                        "description": "Transactions to be evaluated",
+                        "required": true,
+                        "schema": {
+                            "$ref": "#/definitions/Transaction"
+                        }
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "OK"
+                    },
+                    "409": {
+                        "description": "Conflict"
+                    }
+                }
+            }
+        },
         "/blockchain/blocks/transactions/{transactionId}": {
             "get": {
                 "tags": [
